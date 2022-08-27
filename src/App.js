@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
+import LeftBar from './components/navbar/LeftBar'
+import RightBar from './components/navbar/RightBar'
+import Topbar from './components/navbar/Topbar'
+import Counter from './pages/Counter'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [loggedInUser, setloggedInUser] = useState("Ali")
+    return (
+        <div>
+            {/* Navbar */}
+            <Topbar />
+
+            <Row>
+                {/* Left Section */}
+                <Col className="p-5" md={2} style={{ backgroundColor: "blue", color: "white" }}>
+                    <LeftBar />
+                </Col>
+                {/* Main Section */}
+                <Col className="p-5" md={8} style={{ textAlign: "center" }}>
+                    <Counter userName={loggedInUser} />
+                </Col>
+                {/* Right Section */}
+                <Col className="p-5" md={2} style={{ backgroundColor: "blue", color: "white" }}>
+                    <RightBar />
+                </Col>
+            </Row>
+
+
+
+        </div>
+
+
+    )
 }
 
-export default App;
+export default App

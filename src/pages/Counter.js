@@ -4,10 +4,6 @@ function Counter({ userName }) {
 
     const [number, setnumber] = useState(5)
 
-    // const inc = () => {
-    //     setnumber(number + 1)
-    // }
-
     return (
         <div>
             <h1>{userName}</h1>

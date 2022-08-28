@@ -1,0 +1,34 @@
+[
+    {
+        "productId": "1",
+        "productName": "Fajita",
+        "productCategory": "Pizza",
+        "productCostPrice": 2000,
+        "productSalePrice": 1600,
+        "productQty": 10
+    },
+    {
+        "productId": "2",
+        "productName": "Crown Crust",
+        "productCategory": "Pizza",
+        "productCostPrice": 2400,
+        "productSalePrice": 2000,
+        "productQty": 5
+    },
+    {
+        "productId": "3",
+        "productName": "Zinger",
+        "productCategory": "Burger",
+        "productCostPrice": 430,
+        "productSalePrice": 350,
+        "productQty": 1
+    },
+    {
+        "productId": "6",
+        "productName": "Patty",
+        "productCategory": "Burger",
+        "productCostPrice": 330,
+        "productSalePrice": 300,
+        "productQty": 0
+    }
+]

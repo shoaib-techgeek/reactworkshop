@@ -7,9 +7,11 @@ function Products() {
 
   useEffect(() => {
     console.log("Called");
-    // Database
+
     // var products = called
     // productsData = products
+
+    // ADDDDDD
     setproductsData(products);
   }, []);
 
@@ -21,7 +23,6 @@ function Products() {
     );
     console.log(prods);
     setproductsData(prods);
-    // Delete Query
   };
 
   return (

@@ -6,6 +6,8 @@ import Topbar from './components/navbar/Topbar'
 import Counter from './pages/Counter'
 import products from './data/products.json'
 import Products from './pages/Products';
+
+// Commit -> Added Facebook Like Functionality
 function App() {
     const [loggedInUser, setloggedInUser] = useState("Ali")
     const [productsData, setproductsData] = useState([])
@@ -32,6 +34,8 @@ function App() {
                     <h1>Shoaib Ali</h1>
                     <Products />
                 </Col>
+
+
 
                 {/* Right Section */}
                 <Col className="p-5" md={2} style={{ backgroundColor: "blue", color: "white" }}>

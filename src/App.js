@@ -9,7 +9,7 @@ import Products from './pages/Products';
 
 // Commit -> Added Facebook Like Functionality
 function App() {
-    const [loggedInUser, setloggedInUser] = useState("Ali")
+    const [loggedInUser, setloggedInUser] = useState("Ahmed")
     const [productsData, setproductsData] = useState([])
 
     // useEffect(() => {
